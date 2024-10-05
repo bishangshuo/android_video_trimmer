@@ -102,6 +102,14 @@ class VideoEditor @JvmOverloads constructor(
         setUpMargins()
     }
 
+    fun getClipStartPosition(): Long {
+        return mStartPosition
+    }
+
+    fun getClipEndPosition(): Long {
+        return mEndPosition
+    }
+
     @SuppressLint("ClickableViewAccessibility")
     private fun setUpListeners() {
         mListeners = ArrayList()
